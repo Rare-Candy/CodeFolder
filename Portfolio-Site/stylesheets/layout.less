@@ -1,0 +1,29 @@
+////////////
+// LAYOUT //
+////////////
+
+// header
+header#top {
+	margin-bottom: 1em;
+}
+
+// main column & sidebar
+#maincolumn {
+	.column(12);
+}
+#sidebar {
+	.column(6);
+}
+
+#subcolumn {
+    .column(12);
+}
+
+@media screen and (max-width: 720px) {
+	#maincolumn,
+	#sidebar,
+    #subcloumn {
+    .column(12);
+    margin-bottom: 1em;
+	}
+}

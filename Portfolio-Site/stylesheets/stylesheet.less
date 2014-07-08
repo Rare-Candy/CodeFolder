@@ -1,73 +1,43 @@
-body{
+//Layout And Sections
+body               {
      padding: 0;
      margin: 0;
-     }
-
-header#top {
-            padding: 0;
-            margin: 0;
-           }
-
-h1 {
-    color: white;
-    font-family: 'Amatic SC';
-    font-size: 3.8em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 20px;
-    text-align: center;
-    }
-.logo {
-    display: none;
-}
-h2 {
-    display: inline;
-    color: white;
-    width: 10%;
-    text-align: center;
-    }
-
-a  {
-    text-decoration: none;
-    color:white;
-    opacity:0.9;
+   background-color:#3498db
+;
 }
 
-a:visited {
-    text-decoration: none;
-    color: white;
-    opacity: 0.9;
-}
-
-a:hover {
-    text-decoration: none;
-    opacity:0.4;
-}
-
-#maincolumn {
+#maincolumn        {
     padding: 0;
     margin: 0;
     width: 100%;
-    font-family: 'Raleway', sans-serif;
 	font-size: 1.5em;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 	background-color: none;
     text-align: center;
 }
 
-#sidebar {
+#maincolumn2       {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+	font-size: 1.5em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+	background-color: none;
+    text-align: center;
+}
+#sidebar           {
     padding: 0;
     margin: 0;
     width: 100%;
     border: 4px solid #ecf0f1;
-    font-family: 'Raleway', sans-serif;
 	font-size: 1em;
     text-align: center;
  
 }
 
-#subcolumn {
+#subcolumn         {
     padding: 0;
     margin: 0;
     width: 33.2%;
@@ -82,7 +52,7 @@ a:hover {
     margin-bottom: 2em;
 }
 
-#subcolumn1 {
+#subcolumn1        {
     padding: 0;
     margin: 0;
     width: 33.2%;
@@ -90,26 +60,72 @@ a:hover {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
 	font-size: 1.5em;
-	background-color:#3498db;
+
     text-align: center;
     margin-bottom: 2em;
 }
 
-#disqus_thread {
-    border-radius: 9px;
-    opacity: 0.8;
-} 
 
-video#bgvid {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background-size: cover;
-    -webkit-filter: blur(5px);
+   .About          {
+   background-color:#9b59b6;
+}
+.rocketbg          {
+    background-image: url("rocket.png");
+    background-repeat:repeat;
+    }
+//______________________
+header#top         {
+            padding: 0;
+            margin: 0;
+
+           }
+//Text And Headings
+h1                 {
+    color: white;
+    font-family: 'Amatic SC';
+    font-size: 3.6em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 20px;
+    text-align: center;
+    }
+h2                 {
+    display: inline;
+    color: white;
+    width: 10%;
+    text-align: center;
+    }
+p                  {
+    color: white;
+    font-family: 'Amatic SC';
+    font-size: 1.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 20px;
+    text-align: center;
+    }
+
+a                  {
+    text-decoration: none;
+    color:white;
+
 }
 
-.profile {
+a:visited          {
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover            {
+    text-decoration: none;
     
+}
+
+
+#disqus_thread     {
+    border-radius: 9px;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 720px) {
@@ -132,3 +148,64 @@ video#bgvid {
         display: block;
 
     }}
+
+
+#linkedin          {
+    height:380px;
+    width:300px;
+}
+
+#me                {
+    position: absolute;
+   z-index: 2;
+    border-radius: 900px;
+width:180px;
+    height: 180px;
+    border:20px dashed #ffffff;
+    position:inherit;
+}
+
+#me:hover          {
+    border: 20px solid #ffffff;
+
+}
+
+#melink:hover      {
+    text-decoration:none;
+
+}
+
+#rocket            {
+    position:absolute;
+z-index: -1;
+margin-bottom: 300px;
+    width: 600px;
+    height: auto;
+}
+
+input              {
+background-color: transparent;
+    border: 5px solid #ffffff;
+  width: 33.2%;
+    height: 50px;
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+input:hover        {
+
+    border: 5px solid #ffffff;
+
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.logo              {
+    display: none;
+}
+#myface:hover, #me:hover {
+    text-decoration: none;
+}

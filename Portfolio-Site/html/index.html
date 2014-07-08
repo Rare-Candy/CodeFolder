@@ -8,6 +8,7 @@
 
     <!-- Stylesheets -->
 	<link rel="stylesheet" href="../stylesheets/stylesheet.less" type="text/less" media="screen" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!--link rel="stylesheet" href="responsive.css" type="text/css" media="screen" /-->
 	
     <!-- Scripts -->
@@ -16,46 +17,47 @@
 	<!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
     <body>
-
-	<video autoplay loop id="bgvid">
-    <source src="htmlbackground.mp4" type="video/mp4">
-    </video>
-	
 	<!-- Header -->
-	<header id="top">
-    <h1><span id="logo">Joe B</span><span id="logotext">raybrook</span>
-    <a href="#maincolumn">About</a>    
+
+       <article class="rocketbg" id="maincolumn"><a href="index.html"><img id="me" src="me.jpg"></a></article>
+
+        <header id="top">
+
+   <h1 ID="MYNAME"><span id="logo">Joe B</span><span id="logotext">raybrook</span>
+    <a href=about.html>About</a>
     <a>Portfolio</a>  
-    <a href="#subcolumn">Contact</a>
+
     </h1>
     </header>
-	<!-- Main Body -->
-	<article id="subcolumn"><a href="http://open.spotify.com/user/1169239819"><img src="appbar.social.spotify.png" id="spotify"></a></article>
-    <article id="subcolumn"><a href="https://twitter.com/TheBraybrook"><img src="appbar.social.twitter.png" class="sociallink"></a></article>
-    <article id="subcolumn"><a href="https://www.linkedin.com/pub/joe-braybrook/7b/7a7/b4" class="sociallink"><img src="appbar.social.linkedin.png"></a></article>
 
-   <article id="subcolumn1">
-   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4935928.288915883!2d-2.3278149499999996!3d52.838200449999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1396000101610" width="100%" height="300" frameborder="0" style="border:0">     </iframe>
-	</article>
-     <article id="subcolumn1">
-    <!--
-    PeoplePerHour Profile Widget
-    The div#pph-hire me is the element
-    where the iframe will be inserted.
-    You may move this element wherever
-    you need to display the widget
--->
-<div id="pph-hireme"></div>
-<script type="text/javascript">
-(function(d, s) {
-    var useSSL = 'https:' == document.location.protocol;
-    var js, where = d.getElementsByTagName(s)[0],
-    js = d.createElement(s);
-    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1446484204/397477.js?width=300&height=255&orientation=vertical&theme=light&hourlies=126504&rnd='+parseInt(Math.random()*10000, 10);
-    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
-}(document, 'script'));
-</script>
-	</article>
+
+    <article id="subcolumn"></article>
+    <article id="subcolumn"><a href="https://twitter.com/TheBraybrook"><img src="appbar.social.twitter.png" class="sociallink"></a><a href="https://www.linkedin.com/pub/joe-braybrook/7b/7a7/b4" class="sociallink"><img src="appbar.social.linkedin.png"></a><a href="http://open.spotify.com/user/1169239819"><img src="appbar.social.spotify.png" id="spotify"></a></article>
+    <article id="subcolumn"></article>
+
+
+
+  <script>
+    $(document).ready(function(){
+    $("a").hover(function(){
+    $("a").css("color",('#'+(Math.random()*0xFFFFFF<<0).toString(16)));
+    },function(){
+    $("a").css("color",('#'+(Math.random()*0xFFFFFF<<0).toString(16)));
+    });
+    });
+    </script>
+
+   <script>$(function(){
+        var y = 0;
+        setInterval(function(){
+            y-=3;
+            $('.rocketbg').css('background-position', y + 'px 0');
+        },60);
+    })
+	</script>
+
+
+
 
     </body>
     <!-- | (• ◡•)|/ \(❍ᴥ❍ʋ) -->
